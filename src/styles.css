@@ -100,9 +100,28 @@ form {
   border-left: 6px solid var(--main-color);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
   color: var(--text-color);
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
