@@ -19,9 +19,6 @@ function generateQuote(event) {
   let quoteElement = document.querySelector("#quote");
 
   quoteElement.innerHTML = "Generating quote...";
-  console.log("Generating quote...");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiURL).then(showQuote);
 }
