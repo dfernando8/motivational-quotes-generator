@@ -8,44 +8,47 @@
     <title>AI Quotes Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Quotes generator</h1>
-      <strong>Get inspired with the help of SheCodes AI</strong>
-    </header>
-    <main>
-      <form class="quotes-generator-form">
-        <input
-          type="text"
-          class="input-bar"
-          id="user-input"
-          placeholder="Enter the topic..."
-          autofocus
-          autocomplete="off"
-          required
-        />
-        <input type="submit" value="submit" class="search" />
-        <div class="hint" id="hint">i.e. Peace, Love & Travel</div>
-      </form>
+    <div class="container">
+      <header>
+        <h1>Quotes generator</h1>
+        <h2>Get inspired with the help of SheCodes AI</h2>
+      </header>
+      <main>
+        <div class="form-container">
+          <form class="quotes-generator-form">
+            <input
+              type="text"
+              class="instruction"
+              id="user-instruction"
+              placeholder="Enter the topic..."
+              autofocus
+              autocomplete="off"
+              required
+            />
+            <input type="submit" value="submit" class="submit-button" />
+          </form>
+          <div class="hint" id="hint">i.e. Peace, Love & Travel</div>
+        </div>
+        <div class="quote" id="quote">The quote will go here</div>
+      </main>
 
-      <div class="quote" id="quote">The quote will go here</div>
-    </main>
-
-    <footer>
-      Coded by
-      <a href="https://github.com/dfernando8" target="_blank"
-        >Dileeka Fernando</a
-      >
-      and is
-      <a
-        href="https://github.com/dfernando8/motivational-quotes-generator"
-        target="_blank"
-        >on GitHub</a
-      >
-      and hosted
-      <a href="https://motivational-assistant.netlify.app/" target="_blank"
-        >on Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/dfernando8" target="_blank"
+          >Dileeka Fernando</a
+        >
+        and is
+        <a
+          href="https://github.com/dfernando8/motivational-quotes-generator"
+          target="_blank"
+          >on GitHub</a
+        >
+        and hosted
+        <a href="https://motivational-assistant.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
