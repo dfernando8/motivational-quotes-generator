@@ -8,7 +8,27 @@
     <title>AI Quotes Generator</title>
   </head>
   <body>
-    <h1>Welcome to the AI quotes generator</h1>
+    <header>
+      <h1>Quotes generator</h1>
+      <strong>Get inspired with the help of SheCodes AI</strong>
+    </header>
+    <main>
+      <form class="quotes-generator-form">
+        <input
+          type="text"
+          class="input-bar"
+          id="user-input"
+          placeholder="Enter the topic..."
+          autofocus
+          autocomplete="off"
+          required
+        />
+        <input type="submit" value="submit" class="search" />
+        <div class="hint" id="hint">i.e. Peace, Love & Travel</div>
+      </form>
+
+      <div class="quote" id="quote">The quote will go here</div>
+    </main>
 
     <footer>
       Coded by
